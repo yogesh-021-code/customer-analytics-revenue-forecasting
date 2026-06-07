@@ -134,19 +134,19 @@ engagement_score = avg_session_time / (support_tickets + 1)
 
 ## Revenue by Subscription Plan
 
-![Revenue by Plan](images/revenue_by_plan.png)
+![Revenue by Plan](images/revenue_by_plan_type.png)
 
 ---
 
 ## Revenue vs Customer Tenure
 
-![Revenue vs Tenure](images/revenue vs Tenure.png)
+![Revenue vs Tenure](images/Revenue_vs_Tenure.png)
 
 ---
 
 ## Top Revenue Generating Cities
 
-![Top Cities](images/Top5 cities.png)
+![Top Cities](images/Top5_cities.png)
 
 ---
 
@@ -164,7 +164,7 @@ engagement_score = avg_session_time / (support_tickets + 1)
 
 ## Engagement Score vs Revenue
 
-![Engagement Score](images/Eng. vs TR.png)
+![Engagement Score](images/Eng._vs_TR.png)
 
 ---
 
@@ -211,7 +211,7 @@ Revenue Prediction
 
 ## Model Performance
 
-![Actual vs Predicted Revenue](images/actual-vs-predicted.png)
+![Actual vs Predicted Revenue](images/Actual_vs_Predicted(LR).png)
 
 ### Performance Metrics
 
