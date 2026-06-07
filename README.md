@@ -1,106 +1,80 @@
+<div align="center">
+
 # 📊 End-to-End Customer Analytics & Revenue Forecasting
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
-![Scikit-Learn](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+### Transforming Customer Data into Business Insights using Python & Machine Learning
+
+[![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)](https://python.org)
+[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge&logo=pandas)](https://pandas.pydata.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)](https://scikit-learn.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-success?style=for-the-badge&logo=github)](https://github.com/yogesh-021-code)
+
+</div>
 
 ---
 
-## 🚀 Project Overview
+## 👨‍💻 About The Project
 
-Businesses generate massive amounts of customer data every day, but turning that data into actionable insights is a challenge.
+This project analyzes customer subscription behavior, engagement patterns, churn trends, and revenue generation for a subscription-based business.
 
-This project focuses on analyzing customer demographics, subscription behavior, engagement patterns, and revenue generation to help a subscription-based company:
+The objective is to uncover business insights and build a machine learning model capable of forecasting customer revenue.
 
-✅ Understand customer behavior
+### Key Goals
 
-✅ Identify revenue-driving factors
+✅ Customer Segmentation
 
-✅ Detect churn patterns
+✅ Revenue Forecasting
 
-✅ Predict future customer revenue using Machine Learning
+✅ Churn Analysis
+
+✅ Feature Engineering
+
+✅ Business Intelligence
+
+✅ Machine Learning
 
 ---
 
-## 🎯 Business Problem
+# 📌 Business Problem
 
-A subscription-based digital service company wants to:
+A subscription-based company wants to:
 
 - Increase customer retention
+- Reduce churn
 - Improve revenue forecasting
 - Identify high-value customers
-- Understand the impact of plans, discounts, and engagement on revenue
+- Understand customer engagement behavior
 
-The company collects customer, subscription, marketing, and usage data but lacks a data-driven decision-making framework.
-
----
-
-## 📂 Dataset Information
-
-### Customer Information
-- Customer ID
-- Age
-- Gender
-- City
-
-### Subscription Details
-- Plan Type
-- Monthly Fee
-- Tenure Months
-
-### Usage & Support
-- Average Session Time
-- Support Tickets
-
-### Marketing Information
-- Marketing Channel
-- Discount Percentage
-
-### Target Variables
-- Churn Status
-- Total Revenue
+This project provides a complete data-driven solution using Python and Machine Learning.
 
 ---
 
-## 🧹 Data Cleaning & Preprocessing
+# 📂 Dataset Overview
 
-### Data Quality Checks
-
-✔ Missing Value Treatment
-
-✔ Duplicate Removal
-
-✔ Invalid Age Detection
-
-✔ Date Validation
-
-✔ Logical Consistency Checks
-
-✔ Data Type Conversion
+| Category | Features |
+|----------|-----------|
+| Customer Information | Age, Gender, City |
+| Subscription Data | Plan Type, Monthly Fee, Tenure |
+| Usage Metrics | Session Time, Support Tickets |
+| Marketing Data | Channel, Discounts |
+| Target Variable | Total Revenue |
 
 ---
 
-## ⚙️ Feature Engineering
+# ⚙️ Feature Engineering
 
-Created multiple business-driven features:
+Created several business-focused features:
 
-| Feature | Description |
-|----------|-------------|
-| customer_tenure_years | Tenure converted into years |
-| revenue_per_month | Revenue generated per month |
-| churn_flag | Binary churn indicator |
-| age_group | Young / Middle / Senior |
-| high_value_customer | Revenue above median |
-| days_active | Customer activity duration |
-| session_usage_category | Low / Medium / High |
-| discount_category | Discount segmentation |
-| signup_month | Signup month extracted |
-| signup_year | Signup year extracted |
-| support_intensity | High / Low support usage |
-| revenue_category | Revenue segmentation |
-| plan_rank | Numeric plan encoding |
-| engagement_score | Customer engagement metric |
+- Customer Tenure Years
+- Revenue Per Month
+- Churn Flag
+- High Value Customer Flag
+- Revenue Category
+- Age Group
+- Support Intensity
+- Engagement Score
+- Plan Rank
+- Session Usage Category
 
 ### Engagement Score Formula
 
@@ -108,55 +82,62 @@ Created multiple business-driven features:
 engagement_score = avg_session_time / (support_tickets + 1)
 ```
 
-This score rewards active customers while penalizing customers requiring frequent support.
+---
+
+# 📈 Key Visualizations
+
+## Revenue by Subscription Plan
+
+![Revenue by Plan](images/revenue-by-plan.png)
 
 ---
 
-## 📈 Exploratory Data Analysis (EDA)
+## Revenue vs Customer Tenure
 
-### Data Distribution Analysis
-
-- Age Distribution
-- Monthly Fee Distribution
-- Revenue Distribution
-- Session Time Analysis
-
-### Customer Segmentation
-
-- Revenue by Plan Type
-- Churn Rate by Plan
-- Revenue by Marketing Channel
-- Revenue by City
-
-### Behavioral Analysis
-
-- Revenue vs Tenure
-- Engagement Score vs Revenue
-- Signup Trends
-- Revenue Trends
+![Revenue vs Tenure](images/revenue-vs-tenure.png)
 
 ---
 
-## 📊 Visualizations
+## Top Revenue Generating Cities
 
-### Revenue by Plan Type
-Identify the most profitable subscription plans.
-
-### Churn Analysis
-Discover plans with the highest churn risk.
-
-### Customer Engagement Analysis
-Understand how user activity influences revenue.
-
-### Correlation Heatmap
-Analyze relationships between variables.
-
-### Actual vs Predicted Revenue
-Evaluate machine learning model performance.
+![Top Cities](images/top-cities-revenue.png)
 
 ---
 
-## 🤖 Machine Learning Model
+## Customer Signup Trend
+
+![Signup Trend](images/signup-trend.png)
+
+---
+
+## Monthly Revenue Trend
+
+![Revenue Trend](images/revenue-trend.png)
+
+---
+
+## Engagement Score vs Revenue
+
+![Engagement Score](images/engagement-score.png)
+
+---
+
+## Correlation Analysis
+
+![Heatmap](images/correlation-heatmap.png)
+
+### Top Revenue Drivers
+
+| Feature | Correlation |
+|----------|------------|
+| Tenure Months | 0.78 |
+| Monthly Fee | 0.53 |
+| Engagement Score | Positive Impact |
+| Churn Flag | Negative Impact |
+
+---
+
+# 🤖 Machine Learning Model
 
 ### Model Used
 
@@ -171,40 +152,35 @@ Data Cleaning
       ↓
 Feature Engineering
       ↓
-EDA & Visualization
+EDA
       ↓
 Train-Test Split
       ↓
 Linear Regression
       ↓
-Model Evaluation
+Revenue Prediction
 ```
 
 ---
 
-## 📏 Evaluation Metrics
+## Model Performance
 
-- R² Score
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
+![Actual vs Predicted Revenue](images/actual-vs-predicted.png)
 
----
+### Performance Metrics
 
-## 💡 Key Business Insights
+| Metric | Score |
+|----------|----------|
+| R² Score | 0.918 |
+| Revenue Prediction Accuracy | 91.8% |
 
-📌 Customer tenure strongly impacts revenue.
+### Key Insight
 
-📌 Premium plan users generate significantly higher revenue.
-
-📌 Highly engaged users contribute more revenue.
-
-📌 Excessive discounts may reduce profitability.
-
-📌 Support ticket frequency can indicate churn risk.
+The model successfully explains approximately **91.8% of customer revenue variation**, making it highly effective for revenue forecasting.
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Tech Stack
 
 - Python
 - Pandas
@@ -216,20 +192,14 @@ Model Evaluation
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
 Customer-Analytics-Revenue-Forecasting/
 │
-├── data/
-│   └── customer_subscription_data.csv
-│
-├── notebooks/
-│   └── subscription_churn_prediction.ipynb
-│
 ├── images/
-│   └── visualizations
-│
+├── subscription_revenue_prediction.ipynb
+├── subscription_data.csv
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -237,26 +207,38 @@ Customer-Analytics-Revenue-Forecasting/
 
 ---
 
-## 📌 Future Enhancements
+# 🚀 Future Improvements
 
 - Random Forest Regression
-- XGBoost Implementation
+- XGBoost Regression
+- Churn Prediction Model
 - Power BI Dashboard
 - Customer Lifetime Value Prediction
-- Churn Prediction Classification Model
 
 ---
 
-## 👨‍💻 Author
+# 📬 Connect With Me
 
-**Yogesh Dhruw**
+<p align="center">
 
-📧 Email: Your Email
+<a href="mailto:yogeshdhruwy@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-yogeshdhruwy%40gmail.com-red?style=for-the-badge&logo=gmail">
+</a>
 
-🔗 LinkedIn: Your LinkedIn Profile
+<a href="https://www.linkedin.com/in/yogesh-dhruw-031ba8321/">
+<img src="https://img.shields.io/badge/LinkedIn-Yogesh%20Dhruw-blue?style=for-the-badge&logo=linkedin">
+</a>
 
-💻 GitHub: https://github.com/yogesh-021-code
+<a href="https://github.com/yogesh-021-code">
+<img src="https://img.shields.io/badge/GitHub-yogesh--021--code-black?style=for-the-badge&logo=github">
+</a>
+
+</p>
 
 ---
 
-⭐ If you found this project useful, don't forget to give it a Star!
+<div align="center">
+
+⭐ If you found this project useful, please consider giving it a star!
+
+</div>
