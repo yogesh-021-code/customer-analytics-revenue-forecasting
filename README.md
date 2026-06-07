@@ -13,42 +13,88 @@
 
 ---
 
-## 👨‍💻 About The Project
+# 📊 Project Highlights
 
-This project analyzes customer subscription behavior, engagement patterns, churn trends, and revenue generation for a subscription-based business.
+### Dataset Summary
 
-The objective is to uncover business insights and build a machine learning model capable of forecasting customer revenue.
-
-### Key Goals
-
-✅ Customer Segmentation
-
-✅ Revenue Forecasting
-
-✅ Churn Analysis
-
-✅ Feature Engineering
-
-✅ Business Intelligence
-
-✅ Machine Learning
+| Metric | Value |
+|---------|---------|
+| Total Records | 2,000 Customers |
+| Features Analyzed | 15 |
+| Engineered Features | 14 |
+| Visualizations Created | 14+ |
+| Machine Learning Models | 1 |
+| Target Variable | Total Revenue |
+| Model Accuracy (R²) | 91.8% |
 
 ---
 
-# 📌 Business Problem
+# 📈 Key Business Findings
 
-A subscription-based company wants to:
+### Revenue Drivers
 
-- Increase customer retention
-- Reduce churn
-- Improve revenue forecasting
-- Identify high-value customers
-- Understand customer engagement behavior
+- Customer tenure showed the strongest relationship with revenue (**Correlation = 0.78**).
+- Monthly subscription fee was the second most influential revenue factor (**Correlation = 0.53**).
+- Premium and Standard plans generated the highest average customer value.
+- Long-term customers consistently produced significantly higher revenue.
 
-This project provides a complete data-driven solution using Python and Machine Learning.
+### Customer Behavior Insights
+
+- Customers with higher engagement scores demonstrated stronger revenue contribution.
+- Support ticket frequency negatively impacted engagement levels.
+- High-tenure customers were less likely to churn and generated higher lifetime value.
+
+### Geographic Insights
+
+- Mumbai emerged as the highest revenue-generating city (**₹5.9M+ revenue**).
+- Pune, Hyderabad, Chennai, and Bangalore were identified as other major revenue contributors.
+
+### Business Trends
+
+- Customer acquisition peaked during January and March.
+- Revenue trends indicated seasonal fluctuations across signup months.
+- September recorded the lowest revenue contribution among all months.
 
 ---
 
+# 🤖 Machine Learning Results
+
+### Linear Regression Performance
+
+| Metric | Value |
+|----------|----------|
+| R² Score | 0.918 |
+| Variance Explained | 91.8% |
+| Model Type | Linear Regression |
+| Prediction Objective | Customer Revenue Forecasting |
+
+### Model Interpretation
+
+The Linear Regression model successfully captured approximately **91.8% of total revenue variation**, indicating strong predictive capability for future customer revenue forecasting and business planning.
+
+---
+
+# 💼 Business Recommendations
+
+### Customer Retention
+
+- Focus retention campaigns on customers with low tenure.
+- Develop loyalty programs for long-term subscribers.
+
+### Revenue Growth
+
+- Promote upgrades from Basic to Premium plans.
+- Target high-value customer segments identified through engagement scoring.
+
+### Marketing Optimization
+
+- Invest more in acquisition channels generating high-value customers.
+- Improve conversion strategies during low-performing months.
+
+### Customer Experience
+
+- Reduce support ticket frequency through proactive customer support.
+- Increase customer engagement through personalized experiences.
 # 📂 Dataset Overview
 
 | Category | Features |
@@ -88,43 +134,43 @@ engagement_score = avg_session_time / (support_tickets + 1)
 
 ## Revenue by Subscription Plan
 
-![Revenue by Plan](images/revenue-by-plan.png)
+![Revenue by Plan](images/revenue_by_plan.png)
 
 ---
 
 ## Revenue vs Customer Tenure
 
-![Revenue vs Tenure](images/revenue-vs-tenure.png)
+![Revenue vs Tenure](images/revenue vs Tenure.png)
 
 ---
 
 ## Top Revenue Generating Cities
 
-![Top Cities](images/top-cities-revenue.png)
+![Top Cities](images/Top5 cities.png)
 
 ---
 
 ## Customer Signup Trend
 
-![Signup Trend](images/signup-trend.png)
+![Signup Trend](images/signup_trend.png)
 
 ---
 
 ## Monthly Revenue Trend
 
-![Revenue Trend](images/revenue-trend.png)
+![Revenue Trend](images/monthly_trend.png)
 
 ---
 
 ## Engagement Score vs Revenue
 
-![Engagement Score](images/engagement-score.png)
+![Engagement Score](images/Eng. vs TR.png)
 
 ---
 
 ## Correlation Analysis
 
-![Heatmap](images/correlation-heatmap.png)
+![Heatmap](images/heatmap.png)
 
 ### Top Revenue Drivers
 
